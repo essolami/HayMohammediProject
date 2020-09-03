@@ -1,7 +1,5 @@
 ---
 deployment:
- tasks:
-  - export DEPLOYPATH=/home/maresa/public_html/
-  - /bin/rm -Rf $DEPLOYPATH
-  - /bin/mkdir $DEPLOYPATH
-  - /bin/cp -R src/ $DEPLOYPATH
+  tasks:
+    - export DEPLOYPATH=/home/maresa/public_html/
+    - /bin/cp -a * $DEPLOYPATH
